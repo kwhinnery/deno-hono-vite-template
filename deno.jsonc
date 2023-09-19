@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "autoprefixer": "npm:autoprefixer@10",
+    "hono/": "https://deno.land/x/hono@v3.5.6/",
+    "postcss": "npm:postcss@8",
+    "tailwindcss": "npm:tailwindcss@3",
+    "vite": "npm:vite@4"
+  },
+  "tasks": {
+    "build": "deno run -A --unstable npm:vite build",
+    "dev": "deno run -A --unstable --watch src/server/app.tsx",
+    "npm_install": "deno run -A tasks/npm_install.ts"
+  }
+}
